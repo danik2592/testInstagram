@@ -1,0 +1,1721 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing rendering DesignerWidget should invoke nextPage function 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value="1"
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="col-md-4 individual"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[fullName]"
+                  >
+                    Фамилия Имя Отчество
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[fullName]"
+                    class="form-control"
+                    id="Designer[fullName]"
+                    name="Designer[fullName]"
+                    type="text"
+                    value="1"
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[iin]"
+                    >
+                      ИИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[iin]"
+                      name="Designer[iin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value="050140004440"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Testing rendering DesignerWidget should render legal with errors in inputs 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Номер лицензии».
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Категория лицензии».
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4 legal"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[organizationName]"
+                  >
+                    Наименование организации
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[organizationName]"
+                    class="form-control"
+                    id="Designer[organizationName]"
+                    name="Designer[organizationName]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Наименование организации».
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group has-error"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[bin]"
+                    >
+                      БИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[bin]"
+                      name="Designer[bin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value=""
+                    />
+                    <span
+                      class="help-block"
+                    >
+                      Необходимо заполнить «БИН».
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Testing rendering DesignerWidget should render with empty inputs 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="col-md-4 individual"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[fullName]"
+                  >
+                    Фамилия Имя Отчество
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[fullName]"
+                    class="form-control"
+                    id="Designer[fullName]"
+                    name="Designer[fullName]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[iin]"
+                    >
+                      ИИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[iin]"
+                      name="Designer[iin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Testing rendering DesignerWidget should render with errors in inputs 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Номер лицензии».
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Категория лицензии».
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4 individual"
+            >
+              <div
+                class="form-group has-error"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[fullName]"
+                  >
+                    Фамилия Имя Отчество
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[fullName]"
+                    class="form-control"
+                    id="Designer[fullName]"
+                    name="Designer[fullName]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+                <span
+                  class="help-block"
+                >
+                  Необходимо заполнить «Фамилия Имя Отчество».
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group has-error"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[iin]"
+                    >
+                      ИИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[iin]"
+                      name="Designer[iin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value=""
+                    />
+                    <span
+                      class="help-block"
+                    >
+                      Необходимо заполнить «ИИН».
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Testing rendering DesignerWidget should render with legal inputs 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="col-md-4 legal"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[organizationName]"
+                  >
+                    Наименование организации
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[organizationName]"
+                    class="form-control"
+                    id="Designer[organizationName]"
+                    name="Designer[organizationName]"
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[bin]"
+                    >
+                      БИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[bin]"
+                      name="Designer[bin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value=""
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;
+
+exports[`Testing rendering DesignerWidget should render with valid inputs 1`] = `
+<div>
+  <form>
+    <div
+      class="container new_bid"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="title-type"
+          >
+            Данные проектировщика
+          </div>
+          <div
+            class="information-alert"
+          >
+            <div
+              class="information-icon"
+            >
+              <span
+                class="image-icons point"
+              />
+            </div>
+            <div
+              class="information-text"
+            >
+              <div
+                class="information"
+              >
+                [object Object]
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="form-group"
+          >
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                checked=""
+                name="Designer[designerType]"
+                type="radio"
+                value="0"
+              />
+              Физическое лицо
+            </label>
+            <label
+              class="radio-inline"
+              title=""
+            >
+              <input
+                name="Designer[designerType]"
+                type="radio"
+                value="1"
+              />
+              Юридическое лицо
+            </label>
+          </div>
+        </div>
+      </div>
+      <div
+        class="row"
+      >
+        <div
+          class="col-md-12"
+        >
+          <div
+            class="row"
+          >
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[licenseNumber]"
+                  >
+                    Номер лицензии
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[licenseNumber]"
+                    class="form-control"
+                    id="Designer[licenseNumber]"
+                    name="Designer[licenseNumber]"
+                    type="text"
+                    value="1"
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="col-md-4"
+            >
+              <div
+                class="form-group"
+              >
+                <label
+                  class="control-label labelRequired"
+                >
+                  Категория лицензии
+                </label>
+                <select
+                  autocomplete="Designer[designerCategory]"
+                  class="form-control"
+                  id="Designer[designerCategory]"
+                  name="Designer[designerCategory]"
+                  placeholder=""
+                >
+                  <option
+                    value=""
+                  >
+                    Введите категорию лицензии
+                  </option>
+                  <option
+                    value="firstCategory"
+                  >
+                    I категория
+                  </option>
+                  <option
+                    value="secondCategory"
+                  >
+                    II категория
+                  </option>
+                  <option
+                    value="thirdCategory"
+                  >
+                    III категория
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div
+              class="col-md-4 individual"
+            >
+              <div
+                class="form-group"
+              >
+                <div
+                  class="label-bottom"
+                >
+                  <label
+                    class="control-label labelRequired"
+                    for="Designer[fullName]"
+                  >
+                    Фамилия Имя Отчество
+                  </label>
+                </div>
+                <span
+                  class="input-group-empty"
+                >
+                  <input
+                    autocomplete="Designer[fullName]"
+                    class="form-control"
+                    id="Designer[fullName]"
+                    name="Designer[fullName]"
+                    type="text"
+                    value="1"
+                  />
+                  <span
+                    class="input-group-addon-empty"
+                  />
+                </span>
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="col-md-12"
+              >
+                <div
+                  class="col-md-4"
+                >
+                  <div
+                    class="form-group"
+                  >
+                    <label
+                      class="control-label labelRequired"
+                      for="Designer[iin]"
+                    >
+                      ИИН
+                    </label>
+                    <input
+                      class="form-control"
+                      id="Designer[iin]"
+                      name="Designer[iin]"
+                      style="background-color: rgb(255, 255, 255);"
+                      type="text"
+                      value="050140004440"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="col-md-4"
+                >
+                  <label
+                    class="control-label"
+                  >
+                     
+                  </label>
+                  <div>
+                    <button
+                      class="btn btn-default"
+                      type="button"
+                    >
+                      Проверить лицензию
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-12"
+          >
+            <div
+              class="from-line"
+            />
+          </div>
+        </div>
+        <div
+          class="row"
+        >
+          <div
+            class="col-md-1"
+          >
+            <button
+              class="btn btn-exit"
+              type="button"
+            >
+              НАЗАД
+            </button>
+          </div>
+          <div
+            class="col-md-1 col-md-offset-10"
+          >
+            <button
+              class="btn btn-next"
+              type="button"
+            >
+              ДАЛЕЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+`;

@@ -1,0 +1,24 @@
+ {
+  "sourceDir": "frontend",
+  "entry": {
+    "instaList": [
+      "./instaList/index.jsx"
+    ]
+  },
+  "commonBundles": [
+    "manifest"
+  ],
+  "externals": {},
+  "alias": {
+    "react-dom": "@hot-loader/react-dom"
+  },
+  "subDirectories": {
+    "sources": "src",
+    "dist": "dist"
+  },
+  "assets": {
+    "styles": "css",
+    "scripts": "js"
+  },
+  "catalog": "assets-catalog.json"
+}

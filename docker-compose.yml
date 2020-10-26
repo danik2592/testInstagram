@@ -1,0 +1,37 @@
+version: '2.3'
+services:
+  php:
+    image: daniyar25/test-insta:app
+#    build:
+#      context: .
+#      dockerfile: build/php/Dockerfile
+    depends_on:
+      - db
+      - cache
+    environment:
+      # For host-volume development (permissions)
+      - PHP_USER_ID=1000
+      # For composer usage in container
+      - GITHUB_API_TOKEN=${GITHUB_API_TOKEN}
+    volumes:
+      - ${APP_BASE_PATH}:/app
+    restart: always
+
+  db:
+    image: postgres:9.6
+    environment:
+      - POSTGRES_USER=${DB_ENV_MYSQL_USER}
+      - POSTGRES_PASSWORD=${DB_ENV_MYSQL_PASSWORD}
+    restart: always
+
+  frontend:
+    image: node:8
+    working_dir: /app
+    volumes:
+      - ${APP_BASE_PATH}:/app
+
+  cache:
+    image: memcached:alpine
+
+volumes:
+  data:

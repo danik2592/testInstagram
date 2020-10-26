@@ -1,0 +1,30 @@
+version: '2.3'
+services:
+  php:
+#    build:
+#      context: .
+#      dockerfile: build/php-dev/Dockerfile
+    environment:
+      # For host-volume development (permissions)
+      - PHP_USER_ID=1000
+      - PHP_ENABLE_XDEBUG=1
+      - DISPLAY_PHP_ERRORS=1
+      - XDEBUG_CONFIG="idekey=PHPSTORM remote_host=${XDEBUG_HOST} profiler_enable=0 remote_log=/tmp/xdebug.log remote_enable=1 remote_autostart=1"
+      - PHP_IDE_CONFIG=serverName=app
+      # For composer usage in container
+      - GITHUB_API_TOKEN=${GITHUB_API_TOKEN}
+      # For usage with https://github.com/jwilder/nginx-proxy
+      # - VIRTUAL_HOST=${VIRTUAL_HOST}
+    ports:
+      - 9000:9000
+      - 80:80
+      - 443:443
+    volumes:
+      # Re-use local composer cache via host-volume
+      - ~/.composer/cache:/root/.composer/cache
+
+  db:
+    ports:
+      - 5432:5432
+    volumes:
+      - data:/var/lib/postgresql/data

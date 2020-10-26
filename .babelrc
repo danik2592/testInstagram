@@ -1,0 +1,31 @@
+{
+  "presets": [
+    ["@babel/env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["Chrome > 50", "Firefox > 52"],
+      },
+    }],
+    "@babel/react",
+  ],
+  "env": {
+    "test": {
+      "presets": [
+        "@babel/env",
+        "@babel/react"
+      ],
+      "sourceMaps": "inline"
+    }
+  },
+  "plugins": [
+    "react-hot-loader/babel",
+    "@babel/plugin-proposal-class-properties",
+    "transform-react-remove-prop-types",
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    "@babel/transform-react-constant-elements",
+    "transform-react-pure-class-to-function",
+    ["@babel/plugin-transform-runtime", {
+           "corejs": 2
+         }]
+  ]
+}
