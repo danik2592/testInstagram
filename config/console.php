@@ -18,8 +18,8 @@ return [
             'class' => MigrateController::class,
             'migrationPath' => null, // disable non-namespaced migrations if app\migrations is listed below
             'migrationNamespaces' => [
-                '@vendor/dektrium/yii2-user/migrations',
-                '@migrations',
+                'vendor/dektrium/yii2-user/migrations',
+                'migrations',
             ],
         ],
     ],
