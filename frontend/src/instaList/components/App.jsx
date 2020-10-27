@@ -20,17 +20,30 @@ class App extends Component {
       posts: [],
       play: false
     }
-
   }
+
+  loadData() {
+      fetch('insta-posts/get-posts')
+          .then(response => response.json())
+          .then(data => {
+              console.log(data);
+              this.setState({ posts: data }, () => {
+                  this.intervalId = setTimeout(() => this.loadData(), 60000);
+              });
+          });
+  }
+
+
 
   componentDidMount() {
     console.log('componentDidMount');
-    fetch('insta-posts/get-posts')
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-          this.setState({ posts: data })
-        });
+      this.loadData()
+  }
+
+
+
+  componentWillUnmount() {
+      clearTimeout(this.intervalId);
   }
 
   render() {
