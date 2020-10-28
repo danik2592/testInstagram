@@ -64,12 +64,6 @@ class Instagram
         curl_close($cURLConnection);
         $headerContent = substr($response, 0, $headers['header_size']);
         $response = trim(str_replace($headerContent, '', $response));
-        return [$response, $headers, $httpCode, $headerContent];
-    }
-
-    private function login(): void
-    {
-        list($response, $headers, $code, $headerContent) = $this->curlRequest('https://www.instagram.com');
         preg_match_all("/Set-Cookie:\s*(?<cookie>[^=]+=[^;]+)/mi", $headerContent, $matches);
         foreach ($matches['cookie'] as $c) {
             if ($c = str_replace(['sessionid=""', 'target=""'], '', $c)) {
@@ -79,6 +73,12 @@ class Instagram
         }
         $this->session['header']['x-csrftoken'] = $this->session['cookie']['csrftoken'] ?? $this->session['header']['x-csrftoken'] ?? '';
         $this->session['header']['content-type'] = 'application/x-www-form-urlencoded';
+        return [$response, $headers, $httpCode];
+    }
+
+    private function login(): void
+    {
+        list($response, $headers, $code) = $this->curlRequest('https://www.instagram.com');
         $this->curlRequest($this->apiUrl.'accounts/login/ajax/', $this->data, true);
     }
 
