@@ -17,7 +17,7 @@ class InstagramController extends Controller
     public function actionGetPosts()
     {
         $users = InstaUsers::find()->all();
-        $insta = new Instagram();
+        $insta = new Instagram(getenv('INSTAGRAM_USERNAME'), getenv('INSTAGRAM_PASSWORD'));
         /** @var InstaUsers $user */
         foreach ($users as $user){
             $posts = $insta->getPostsByUser($user->username);

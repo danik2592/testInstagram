@@ -68,7 +68,7 @@ class InstaUsersController extends Controller
         $model = new InstaUsers();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $insta = new Instagram();
+            $insta = new Instagram(getenv('INSTAGRAM_USERNAME'), getenv('INSTAGRAM_PASSWORD'));
             $model->imageUrl = $insta->getUrlImageByUser($model->username);
             $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);
@@ -91,7 +91,7 @@ class InstaUsersController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            $insta = new Instagram();
+            $insta = new Instagram(getenv('INSTAGRAM_USERNAME'), getenv('INSTAGRAM_PASSWORD'));
             $model->imageUrl = $insta->getUrlImageByUser($model->username);
             $model->save(false);
             return $this->redirect(['view', 'id' => $model->id]);

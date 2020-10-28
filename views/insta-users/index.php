@@ -25,8 +25,16 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'username',
-            'imageUrl:ntext',
-
+            [
+              'attribute' => 'imageUrl',
+              'value' => function($model) {
+                if (empty($model->imageUrl)){
+                    return $model->imageUrl;
+                }
+                return Html::img($model->imageUrl);
+              },
+                'format' => 'html'
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
